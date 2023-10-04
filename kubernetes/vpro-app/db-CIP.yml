@@ -1,4 +1,4 @@
-apiVersion: v1
+apiVersion: v1  #not going to exposed to outside traffic it is for internal traffic
 kind: Service
 metadata:
   name: vprodb
