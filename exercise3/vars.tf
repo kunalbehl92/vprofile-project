@@ -1,19 +1,19 @@
-variable REGION {
+variable "REGION" {
   default = "us-east-2"
 }
 
-variable ZONE1 {
+variable "ZONE1" {
   default = "us-east-2a"
 }
 
-variable AMIS {
-  type = map
+variable "AMIS" {
+  type = map(any)
   default = {
-    us-east-2 = "ami-03657b56516ab7912"
-    us-east-1 = "ami-0947d2ba12ee1ff75"
+    us-east-2 = "ami-09d9029d9fc5e5238"
+    us-east-1 = "ami-0df435f331839b2d6"
   }
 }
 
-variable USER {
+variable "USER" {
   default = "ec2-user"
 }
